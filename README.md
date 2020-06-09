@@ -2,13 +2,13 @@ For Kernel 4.15.x ~ 5.3.x (Linux Mint or Ubuntu Derivatives)
 
 ------------------
 
-## How to install
+## How to install (for arm devices)
 
 `sudo apt-get install build-essential git dkms linux-headers-$(uname -r)`
 
-`git clone https://github.com/kelebek333/rtl8188fu`
+`git clone git clone -b arm https://github.com/kelebek333/rtl8188fu rtl8188fu-arm`
 
-`sudo dkms add ./rtl8188fu`
+`sudo dkms add ./rtl8188fu-arm`
 
 `sudo dkms build rtl8188fu/1.0`
 
